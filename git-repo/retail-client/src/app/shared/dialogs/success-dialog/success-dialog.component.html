@@ -1,0 +1,9 @@
+<div class="dialog-image">
+  <img src="assets/images/check.png"/>
+</div>
+<div class="title">{{data.title | translate}}</div>
+<div class="instruction">
+  <div *ngIf="data.descriptionPart1" class="inline">{{data.descriptionPart1 | translate}}</div>
+  <div *ngIf="data.highlightedData" class="highlighted">{{data.highlightedData}}</div>
+  <div *ngIf="data.descriptionPart2" class="inline">{{data.descriptionPart2 | translate}}</div>
+</div>

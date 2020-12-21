@@ -1,0 +1,27 @@
+<form [formGroup]="formModel" (submit)="signIn()">
+  <div class="form-group"
+       [ngClass]="{'has-error': formModel.get('username').touched && formModel.get('username').errors}">
+    <input class="form-control" formControlName="username" placeholder="{{ 'email' | translate }}"
+           [ngClass]="{'has-error': formModel.get('username').touched && formModel.get('username').errors}">
+  </div>
+  <label class="error-message" *ngIf="formModel.get('username').touched && formModel.get('username').errors?.required">
+    {{"required-field-error" | translate}}
+  </label>
+  <label class="error-message" *ngIf="formModel.get('username').touched && formModel.get('username').errors?.email">
+    {{"invalid-email-error" | translate}}
+  </label>
+  <div class="form-group has-icon"
+       [ngClass]="{'has-error': formModel.get('password').touched && formModel.get('password').errors}">
+    <input class="form-control" [type]="hidePassword ? 'password' : 'text'" formControlName="password"
+           placeholder="{{ 'password' | translate }}"
+           [ngClass]="{'has-error': formModel.get('password').touched && formModel.get('password').errors}">
+  </div>
+  <label class="error-message"
+         *ngIf="formModel.get('password').touched && formModel.get('password').errors?.required">
+    {{"required-field-error" | translate}}
+  </label>
+  <div class="form-group">
+    <button type="submit" class="button" matRipple
+            [disabled]="!formModel.valid || isSignInExecuting">{{"sign-in" | translate | uppercase}}</button>
+  </div>
+</form>

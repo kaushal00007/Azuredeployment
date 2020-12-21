@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1111114",
+        "name": "Adidas Handbag",
+        "active": true,
+        "itemImg": "1111114.png"
+    },
+    {
+        "id": "1111112",
+        "name": "Amul Heavy Cream Milk",
+        "active": true,
+        "itemImg": "1111112.png"
+    },
+    {
+        "id": "1111111",
+        "name": "Amul Milk",
+        "active": true,
+        "itemImg": "1111111.png"
+    },
+    {
+        "id": "1111113",
+        "name": "BOSS Headset",
+        "active": true,
+        "itemImg": "1111113.png"
+    },
+    {
+        "id": "VijayaMilk",
+        "name": "Dairy Product",
+        "active": true,
+        "itemImg": "VijayaMilk.png"
+    },
+    {
+        "id": "1111115",
+        "name": "Fast Track watch",
+        "active": true,
+        "itemImg": "1111115.png"
+    },
+    {
+        "id": "1111116",
+        "name": "Lego",
+        "active": true,
+        "itemImg": "1111116.png"
+    },
+    {
+        "id": "1111119",
+        "name": "Marlboro",
+        "active": true,
+        "itemImg": "1111119.png"
+    },
+    {
+        "id": "1111118",
+        "name": "Persol Sunglasses",
+        "active": true,
+        "itemImg": "1111118.png"
+    },
+    {
+        "id": "1111117",
+        "name": "Saandalwood Perfume",
+        "active": true,
+        "itemImg": "1111117.png"
+    },
+    {
+        "id": "9998881",
+        "name": "sample text",
+        "active": false,
+        "itemImg": "9998881.png"
+    },
+    {
+        "id": "1278932",
+        "name": "sample text",
+        "active": false,
+        "itemImg": "1278932.png"
+    }
+]

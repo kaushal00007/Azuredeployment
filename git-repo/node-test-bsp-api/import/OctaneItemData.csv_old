@@ -1,0 +1,6 @@
+DEPT_ID,DEPT_TEXT,ARTICLE_NO,shortDescription,longDescription,itemStatus,PRICE,currency,effectiveDate,endDate,basePrice,itemPriceType,tareWeightUom,tareWeight,precision,includesContainer,quantityPricedItem
+211,Food,1035939,PIZ PEP KLAP,PIZZAKLAP PEPPERONI,ACTIVE,34,US Dollar,20170815,37:38.4,false,SELF_SERVICE_CASH,PIECE,1,0,false,true
+661,Reg.uden salg,1093592,MILES PLUS,MILES PLUS RABAT,ACTIVE,-0.49,US Dollar,20170815,37:38.4,false,SELF_SERVICE_CASH,PIECE,1,0,false,true
+662,Finansiel,1009512345,e-presentkort,alle produkter e-presentkort,ACTIVE,0,US Dollar,20190219,37:38.4,false,SELF_SERVICE_CASH,PIECE,1,0,false,true
+662,Finansiel,1141038,E-GAVEKORT222,E-GAVEKORT ALLE VARER1,ACTIVE,0,US Dollar,0,37:38.4,false,SELF_SERVICE_CASH,PIECE,1,0,false,true
+212,Tilb. Drik111,1035963,FRISK APP LILL,FRISK APPELSINJUICE LIL. FL.,ACTIVE,25,US Dollar,20170815,37:38.4,false,SELF_SERVICE_CASH,PIECE,1,0,false,true

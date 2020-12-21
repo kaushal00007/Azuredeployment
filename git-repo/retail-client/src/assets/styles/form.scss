@@ -1,0 +1,56 @@
+@import "constants";
+
+.form-group {
+  margin: 0 10px 1rem;
+
+  &.has-error {
+    margin-bottom: 0;
+  }
+
+  &.has-icon {
+    position: relative;
+
+    .inline-icon {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      right: 0;
+      top: 0;
+      font-size: 21px;
+      margin: $inline-icon-margin;
+    }
+  }
+
+  .form-control {
+
+    &:focus {
+      border-color: $primary-green;
+    }
+
+    &.has-error {
+      border-color: $error-red;
+    }
+  }
+
+  .button {
+    color: $white-color;
+    background-color: $black-color;
+    border-color: $black-color;
+    width: 100%;
+    margin-top: 25px;
+
+    &:disabled {
+      background-color: $button-disabled-default;
+      border-color: $button-disabled-default;
+    }
+  }
+}
+
+.error-message {
+  color: $error-red;
+  font-size: 13px;
+  padding-left: .75rem;
+  margin: 0 10px .7rem;
+}

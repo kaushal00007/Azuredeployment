@@ -1,0 +1,14 @@
+@import "../../../../assets/styles/dialog.scss";
+@import "../../../../assets/styles/constants.scss";
+
+.instruction {
+
+  .highlighted {
+    color: $text-green;
+    display: inline;
+  }
+
+  .inline {
+    display: inline;
+  }
+}

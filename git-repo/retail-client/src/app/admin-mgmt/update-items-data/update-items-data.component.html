@@ -1,0 +1,61 @@
+<div class="container1">
+  <div class="subnmenu-container" style="opacity: 1">
+    <div class="subnmenu-body">
+      <div class="submenu-header">
+        <div class="submenu-heading">
+          <span>Edit & Update Data in BSP</span>
+        </div>
+        <div class="submenu-sub-heading"><span></span></div>
+      </div>
+      <div class="submenu-list-coloum">
+        <div class="container-div">
+          <button (click)="goBacktoAdmin()"><</button>
+          <div>
+            <label>Categories </label>
+            <select
+              id="cats"
+              name="Categories"
+              (change)="GetItemsForTheCat($event.target.value)"
+            >
+              <option *ngFor="let cat of cats" [value]="cat.id">
+                {{ cat.name }}
+              </option>
+            </select>
+          </div>
+          <label>Items </label>
+          <select id="items" name="Items">
+            <option *ngFor="let i of items" [value]="i.id">
+              {{ i.name }}
+            </option>
+          </select>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>ItemCode</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of items">
+                <td>{{ i.id }}</td>
+                <td>{{ i.name }}</td>
+                <td>{{ i.desc }}</td>
+                <td>{{ i.itemCode }}</td>
+                <td>{{ i.itemPrice }}</td>
+                <td>{{ i.itemQuantity }}</td>
+                <td>
+                  <button (click)="EdititemsFortheID(i.id)">Edit</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

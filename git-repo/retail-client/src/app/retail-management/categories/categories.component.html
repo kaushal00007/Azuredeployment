@@ -1,0 +1,29 @@
+<app-sidebar></app-sidebar>
+<div class="container1">
+  <div class="subnmenu-container" style="opacity: 1;">
+    <div class="subnmenu-body">
+      <div class="submenu-header">
+        <div class="submenu-heading"><span>Menu</span></div>
+        <div class="submenu-sub-heading"><span></span></div>
+        <div class="navigation">
+          <div class="left lDisable"></div>
+          <div class="right rEnable"></div>
+        </div>
+      </div>
+      <div class="submenu-list-coloum">
+        <div class="submenus-div submenu-center" id="submenus-div" style="width: 4250px; margin-left: 0px;">
+          <div *ngFor="let cat of cats" class="submenu-listview submenu-center SubMenu" id="{{cat.id}}"
+            (click)="getCatItems(cat)">
+            <img [src]="'../../../assets/images/icons/'+cat.catImg" appImage>
+            <!-- <div *ngIf="!imageExists(cat.catImg)"class="cat_default_Image"></div> -->
+            <!-- <div *ngIf="imageExists(cat.catImg)"
+              [ngStyle]="{'background': 'transparent  url(&quot;../../../assets/images/icons/' + cat.catImg + '&quot;) 0% 0% no-repeat padding-box', 'background-size': 'cover'}">
+            </div> -->
+            <span>{{cat.name}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

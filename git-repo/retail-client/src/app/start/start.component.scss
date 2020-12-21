@@ -1,0 +1,42 @@
+@import "../../assets/styles/constants.scss";
+
+.page-wrapper {
+
+  .wrapper {
+    width: 320px;
+    height: 550px;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+
+      img {
+        width: 175px;
+      }
+    }
+
+    .tab-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 10px 20px;
+
+      .tab-title {
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 40px;
+        cursor: pointer;
+        outline: none;
+        font-weight: 500;
+        width: 48%;
+
+        &.active {
+          color: $primary-green;
+          border-bottom: 3px solid $primary-green;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<div class="map-container">
+  <div class="venueMap-div map-popup">
+    <div class="map-header">
+      <div class="close_btn" (click)="onClose();"></div>
+    </div>
+    <div class="map-body">
+      <div class="venue-details">
+
+        <div class="map-logo-div">
+          <div class="map-desc">
+            <span>{{itemDetails.desc}}</span><br>
+            <span>Price :{{itemDetails.itemPrice}}</span><br>
+            <span>{{itemAvailable}}</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="btn-minus btn-quantity" (click)="removeQuantity()"><span>-</span></div>
+          <div class="btn-quantity quantity"><span>{{qunatity}}</span></div>
+          <div class="btn-plus btn-quantity" (click)="addQuantity()"><span>+</span></div>
+        </div>
+
+        <div class="addtocart" (click)="addToCart(itemDetails)"><span>Add to cart</span></div>
+      </div>
+      <div class="separator"></div>
+      <div class="map-div">
+        <div class="venue-map"
+          [ngStyle]="{'background': 'transparent  url(&quot;../../../assets/images/icons/' + itemDetails.itemImg + '&quot;) 0% 0% no-repeat padding-box padding-box', 'background-size':'cover'}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

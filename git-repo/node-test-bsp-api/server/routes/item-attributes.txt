@@ -1,0 +1,104 @@
+//PUT  https://gateway-staging.ncrcloud.com/catalog/item-attributes
+
+vishnu sfdsfsdf
+{
+    "itemAttributes": [
+        {
+            "version": 8,
+            "blockForSale": null,
+            "longDescription": {
+                "values": [
+                    {
+                        "locale": "en-US",
+                        "value": "sample text"
+                    }
+                ]
+            },
+            "shortDescription": {
+                "values": [
+                    {
+                        "locale": "en-US",
+                        "value": "sample text."
+                    }
+
+
+                ]
+            },
+            "merchandiseCategory": {
+                "nodeId": "15"
+            },
+            "status": "TO_DISCONTINUE",
+            "dynamicAttributes": [
+                {
+                    "type": "String",
+                    "attributes": [
+                        {
+                            "key": "key",
+                            "value": "value",
+                            "localizedValue": {
+                                "values": [
+                                    {
+                                        "locale": "en-US",
+                                        "value": "sample text"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "groups": [
+                {
+                    "groupCode": "7389289"
+                }
+            ],
+            "linkGroups": [
+                {
+                    "linkGroupCode": "29837289"
+                }
+            ],
+            "imageUrls": [
+                "String"
+            ],
+            "locations": [
+                {
+                    "aisle": "Aisle A01",
+                    "shelf": "Shelf 1",
+                    "locationType": "WAREHOUSE",
+                    "position": "Front",
+                    "longitude": -84.38965,
+                    "latitude": 33.77912
+                }
+            ],
+            "regulatoryMessages": [
+                {
+                    "locale": "en-US",
+                    "value": "sample text",
+                    "messageType": "prop-65",
+                    "sequence": 1
+                }
+            ],
+            "kitchen": {
+                "cookTime": 300,
+                "modifierTime": 10,
+                "modifierPercentage": 20
+            },
+            "nutritionFacts": {
+                "servingSize": "3/4 cup",
+                "nutritionAttributes": [
+                    {
+                        "nutritionType": "FAT",
+                        "units": "GRAMS",
+                        "value": 300,
+                        "percentDailyValue": 35
+                    }
+                ],
+                "servingPerContainer": 54.25
+            },
+            "itemAttributesId": {
+                "itemCode": "9998882",
+                "enterpriseUnitId": "e9c2036a60b845e4a4b8ce9082beb6f0"
+            }
+        }
+    ]
+}

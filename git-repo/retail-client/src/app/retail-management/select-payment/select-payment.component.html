@@ -1,0 +1,26 @@
+<app-sidebar></app-sidebar>
+<div class="container1">
+  <div class="subnmenu-container" style="opacity: 1;">
+    <div class="subnmenu-body">
+      <div class="submenu-header">
+        <div class="submenu-heading"><span>Payment Options</span></div>
+        <div class="submenu-sub-heading"><span></span></div>
+      </div>
+      <div class="submenu-list-coloum">
+        <div class="delivery-header">
+          <span>Please select a payment method</span>
+        </div>
+        <div class="delivery-div">
+          <div *ngFor="let payment of paymentTypes" [ngClass]="{'delivery-active': (SelectedPayment?.paymentType == payment?.paymentType) }" 
+          (click)="setSelectedPayment(payment)" class="delivery">{{payment?.description}}</div>
+        </div>
+        <div class="totalDiv">
+          <span>Total Items : {{basketItems?.totalQuantity}}</span>
+          <span>Total Price : ${{basketItems?.totalPrice}}</span>
+          <div [ngClass]="{'enabled' : SelectedPayment != null}" class="continue-btn" (click)="createOrder()"><span>-</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,137 @@
+<div>
+  <head>
+    <title>PriceBook</title>
+  </head>
+  <body>
+    <div id="base" class="">
+      <!-- Unnamed (Rectangle) -->
+      <div id="item_details" class="ax_default heading_1">
+        <div id="item_details_div" class=""></div>
+        <div id="item_details_text" class="text">
+          <p><span>Item Details</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="item_number" class="ax_default paragraph">
+        <div id="item_number_div" class=""></div>
+        <div id="item_number_text" class="text">
+          <p><span>Item Number:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="item_text" class="ax_default paragraph">
+        <div id="item_text_div" class=""></div>
+        <div id="item_text_text" class="text">
+          <p><span>Item Text :</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="item_desc" class="ax_default paragraph">
+        <div id="item_desc_div" class=""></div>
+        <div id="item_desc_text" class="text">
+          <p><span>Item Description:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="item_price" class="ax_default paragraph">
+        <div id="item_price_div" class=""></div>
+        <div id="item_price_text" class="text">
+          <p><span>Item Price:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="item_qty" class="ax_default paragraph">
+        <div id="item_qty_div" class=""></div>
+        <div id="item_qty_text" class="text">
+          <p><span>Item Quantity:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div
+        id="btn_update"
+        class="ax_default primary_button"
+        (click)="updateItemPrice()"
+      >
+        <div id="btn_update_div" class=""></div>
+        <div id="btn_update_text" class="text">
+          <p><span>Update</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div
+        id="btn_cancel"
+        class="ax_default primary_button"
+        (click)="cancelClicked()"
+      >
+        <div id="btn_cancel_div" class=""></div>
+        <div id="btn_cancel_text" class="text">
+          <p><span>Cancel</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="item_num_ip" class="ax_default text_field">
+        <div id="item_num_ip_div" class=""></div>
+        <input
+          id="item_num_ip_input"
+          type="text"
+          [disabled]="true"
+          value="{{ items[0].id }}"
+          class="u8_input"
+        />
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="item_name_ip" class="ax_default text_field">
+        <div id="item_name_ip_div" class=""></div>
+        <input
+          id="item_name_ip_input"
+          type="text"
+          value="{{ items[0].name }}"
+          class="u9_input"
+        />
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="item_desc_ip" class="ax_default text_field">
+        <div id="item_desc_ip_div" class=""></div>
+        <input
+          id="item_desc_ip_input"
+          type="text"
+          value="{{ items[0].desc }}"
+          class="u10_input"
+        />
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="item_price_ip" class="ax_default text_field">
+        <div id="item_price_ip_div" class=""></div>
+        <input
+          id="item_price_ip_input"
+          type="text"
+          value="{{ items[0].itemPrice }}"
+          class="u11_input"
+        />
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="item_qty_ip" class="ax_default text_field">
+        <div id="item_qty_ip_div" class=""></div>
+        <input
+          id="item_qty_ip_input"
+          type="text"
+          [disabled]="true"
+          value="{{ items[0].itemQuantity }}"
+          class="u12_input"
+        />
+      </div>
+    </div>
+  </body>
+</div>

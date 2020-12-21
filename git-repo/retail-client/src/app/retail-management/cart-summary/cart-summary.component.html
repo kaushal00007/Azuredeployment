@@ -1,0 +1,48 @@
+<app-sidebar></app-sidebar>
+<div class="container1">
+  <div class="subnmenu-container" style="opacity: 1;">
+    <div class="subnmenu-body">
+      <div class="submenu-header">
+        <div class="submenu-heading"><span>Items Summary</span></div>
+        <div class="submenu-sub-heading"><span></span></div>
+      </div>
+      <div class="submenu-list-coloum">
+        <div class="container-div">
+          <table>
+            <thead>
+              <tr>
+                <th *ngFor="let label of columns">{{label.header}}</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let id of itemIds">
+                <td *ngFor="let label of columns">{{label.type != 'image' ? items[id][label.field] : ''}}
+                  <div *ngIf="label.type == 'image'" class="cat_img" 
+                    [ngStyle]="{'background': 'transparent  url(&quot;../../../assets/images/icons/' + items[id][label.field] + '&quot;) 0% 0% no-repeat padding-box', 'background-size': 'contain','background-position': 'center'}">
+                  </div>
+                </td>
+                <td>
+                  <div class="row">
+                    <div class="btn-minus btn-quantity" (click)="removeQuantity(items[id])"><span>-</span></div>
+                    <div class="btn-plus btn-quantity" (click)="addQuantity(items[id])"><span>+</span></div>
+                    <div class="btn-delete btn-quantity" (click)="deleteItem(items[id])"><span>x</span></div>
+                  </div>
+                </td>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="totalDiv">
+          <span>Total Items : {{basketItems.totalQuantity}}</span>
+          <span>Total Price : ${{basketItems.totalPrice}}</span>
+          <div class="continue-btn" (click)="getDeliveryOptions()"><span>-</span></div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

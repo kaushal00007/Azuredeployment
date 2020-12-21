@@ -1,0 +1,7 @@
+<div class="dialog-image">
+  <img src="assets/images/sad-face.png"/>
+</div>
+<div *ngIf="!data.rawTitle" class="title">{{data.title | translate}}</div>
+<div *ngIf="data.rawTitle" class="title">{{data.title}}</div>
+<div *ngIf="!data.rawDescription" class="instruction">{{data.description | translate}}</div>
+<div *ngIf="data.rawDescription" class="instruction">{{data.description}}</div>

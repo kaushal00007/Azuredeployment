@@ -1,0 +1,25 @@
+<app-sidebar></app-sidebar>
+<div class="container1">
+  <div class="subnmenu-container" style="opacity: 1;">
+    <div class="subnmenu-body">
+      <div class="submenu-header">
+        <div class="submenu-heading"><span>Delivery Options</span></div>
+        <div class="submenu-sub-heading"><span></span></div>
+      </div>
+      <div class="submenu-list-coloum">
+        <div class="delivery-header">
+          <span>Please select a delivery option</span>
+        </div>
+        <div class="delivery-div">
+          <div *ngFor="let delivery of deliveries" [ngClass]="{'delivery-active': (SelectedDelivery?.deliveryType == delivery?.deliveryType) }" (click)="setSelectedDelivery(delivery)" class="delivery">{{delivery.description}}</div>
+        </div>
+        <div class="totalDiv">
+          <span>Delivery details</span>
+          <span>{{SelectedDelivery?.description}}<br><span *ngIf="SelectedDelivery?.deliveryType == 'delivery'"> Delivery Price : {{SelectedDelivery?.deliveryPrice}}</span></span>
+          <div [ngClass]="{'enabled' : SelectedDelivery != null}"  class="continue-btn" (click)="createOrder()"><span>-</span></div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

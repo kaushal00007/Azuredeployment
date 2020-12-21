@@ -1,0 +1,74 @@
+[
+  {
+    "id": "4",
+    "name": "Electronics",
+    "active": true,
+    "catImg": "4_.png"
+  },
+  {
+    "id": "DairyProducts",
+    "name": "Retail",
+    "active": true,
+    "catImg": "DairyProducts.png"
+  },
+  {
+    "id": "Gadgets",
+    "name": "Electronics",
+    "active": true,
+    "catImg": "Gadgets.png"
+  },
+  {
+    "id": "coldBreverages",
+    "name": "Breverages",
+    "active": true,
+    "catImg": "Default.png"
+  },
+  {
+    "id": "11",
+    "name": "Breverages",
+    "active": true,
+    "catImg": "Default.png"
+  },
+  {
+    "id": "5",
+    "name": "Fashion",
+    "active": true,
+    "catImg": "5.png"
+  },
+  {
+    "id": "3",
+    "name": "Gold and Watches",
+    "active": true,
+    "catImg": "3.png"
+  },
+  {
+    "id": "8",
+    "name": "Groceries",
+    "active": true,
+    "catImg": "Default.png"
+  },
+  {
+    "id": "1",
+    "name": "Perfumes and Cosmetics",
+    "active": true,
+    "catImg": "1.png"
+  },
+  {
+    "id": "15",
+    "name": "clothes",
+    "active": true,
+    "catImg": "5.png"
+  },
+  {
+    "id": "2",
+    "name": "Sunglasses",
+    "active": true,
+    "catImg": "2.png"
+  },
+  {
+    "id": "7",
+    "name": "Tobacco",
+    "active": true,
+    "catImg": "7.png"
+  }
+]

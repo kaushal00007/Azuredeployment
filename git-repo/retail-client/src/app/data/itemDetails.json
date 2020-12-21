@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1111117",
+        "name": "Saandalwood Perfume",
+        "desc": "Body and mist sandalwood perfume",
+        "active": false,
+        "itemImg": "1111117.png",
+        "itemPrice": 25,
+        "itemQuantity": 1
+    },
+    {
+        "id": "9998881",
+        "name": "sample text",
+        "desc": "sample text",
+        "active": false,
+        "itemImg": "",
+        "itemPrice": "",
+        "itemQuantity": 1
+    }
+]

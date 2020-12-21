@@ -1,0 +1,37 @@
+<app-sidebar></app-sidebar>
+<div class="container1">
+  <div class="subnmenu-container" style="opacity: 1;">
+    <div class="subnmenu-body">
+      <div class="submenu-header">
+        <div class="submenu-heading"><span>Items Summary</span></div>
+        <div class="submenu-sub-heading"><span></span></div>
+      </div>
+      <div class="submenu-list-coloum">
+        <div class="container-div">
+          <h2>
+            Parse csv file data
+          </h2>
+          
+          <input type="file" name="files" class="form-control" 
+                               #uploads  (change)="onChange(uploads.files)" multiple
+                               value="process"/>
+          <table>
+            <!-- <thead>
+              <tr>
+                <th *ngFor="let label of columns">{{label.header}}</th>
+                <th></th>
+              </tr>
+            </thead> -->
+            <tbody>
+              <tr *ngFor="let record of dataList">
+                <td *ngFor="let key of keys"> {{record[key]}} </td>
+                <!-- <td> {{record[2]}} </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

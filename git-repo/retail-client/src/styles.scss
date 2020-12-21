@@ -1,0 +1,212 @@
+@import "assets/styles/constants.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width:1920px;
+  height: 1080px;
+  position: absolute;
+  background: url('../src/assets/images/background.jpeg')  no-repeat center center fixed;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto/Roboto-Thin-webfont.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto/Roboto-Light-webfont.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto/Roboto-Regular-webfont.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto/Roboto-Medium-webfont.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto/Roboto-Bold-webfont.ttf");
+}
+
+button {
+  border-radius: 40px;
+  font-weight: 500;
+  padding: 6px 20px;
+  border: 1px solid;
+  font-size: 15px;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .wrapper {
+    width: $iphone5-width;
+    height: $iphone5-height;
+  }
+}
+
+re-captcha {
+  .grecaptcha-badge {
+    visibility: hidden !important;
+  }
+}
+
+.mat-checkbox {
+  &.mat-checkbox-checked {
+    .mat-checkbox-background {
+      background-color: $black-color !important;
+    }
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+
+  .mat-ripple-element {
+    background-color: $black-color !important;
+  }
+}
+
+.store-detail-dialog {
+  mat-dialog-container {
+    border-radius: 24px !important;
+  }
+}
+
+.slot-checkbox {
+
+  .mat-checkbox {
+
+    .mat-checkbox-inner-container {
+      width: 31px;
+      height: 31px;
+    }
+
+    .mat-checkbox-frame {
+      border-radius: 5px;
+    }
+
+    &.mat-checkbox-checked {
+
+      .mat-checkbox-background {
+        background-color: $dark-teal-color !important;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.add-booking-table {
+
+  .mat-checkbox {
+
+    .mat-checkbox-inner-container {
+      width: 33px;
+      height: 33px;
+    }
+
+    .mat-checkbox-frame {
+      border-radius: 7px;
+      background: rgba(166, 206, 57, 0.07) !important;
+      border: 1px solid rgba(15, 122, 134, 0.3) !important;
+    }
+
+    &.mat-checkbox-checked {
+      .mat-checkbox-background {
+        background-color: $dark-teal-color !important;
+        border: 1px solid $dark-teal-color !important;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+.checkbox-store-closed {
+
+  .mat-checkbox {
+
+    .mat-checkbox-inner-container {
+      width: 33px;
+      height: 33px;
+    }
+
+    .mat-checkbox-frame {
+      border-radius: 7px;
+      background: $button-disabled-default !important;
+      border: 1px solid $button-disabled-default !important;
+    }
+
+    &.mat-checkbox-checked {
+      .mat-checkbox-background {
+        background-color: $dark-teal-color !important;
+        border: 1px solid $dark-teal-color !important;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+.ngx-pagination {
+  margin-bottom: 0 !important;
+  padding-inline-start: 0 !important;
+}
+
+.ngx-pagination .current {
+  background-color: rgba(166, 206, 57, 0.37) !important;
+  color: #000 !important;
+}
+
+// store manager mobile preview menu
+.mat-menu-panel{
+  min-height: 50px !important;
+  .mat-menu-content {
+    button {
+      background-color: transparent;
+      border: none;
+      text-transform: capitalize;
+    }
+    .icon-user:before {
+      color: #000;
+      margin-right: 5px;
+    }
+  }
+}

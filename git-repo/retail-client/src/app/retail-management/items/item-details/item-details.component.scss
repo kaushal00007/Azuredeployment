@@ -1,0 +1,157 @@
+/* Map  start */
+.map-container {
+  position: absolute;
+  top: 73px;
+  left: 15%;
+  width: 1407px;
+  height: 800px;
+  background: #FFFBF7 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.venueMap-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.map-header {
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  z-index: 50;
+  /* border: 1px solid teal; */
+}
+
+.map-header span {
+  font-family: 'Open Sans SemiBold';
+  font-size: 28px;
+  letter-spacing: 1.12px;
+  color: #361808;
+  text-transform: uppercase;
+  vertical-align: super;
+}
+
+.close_btn {
+  position: absolute;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: url(../../../../assets/images/icons/close_btn.svg) no-repeat center center;
+}
+
+.map-body {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  top: 15%;
+  width: 100%;
+  height: 85%;
+}
+
+.venue-details {
+  flex: 30%;
+}
+
+.map-logo-div {
+  position: relative;
+  margin: 12%;
+  margin-top: 0px;
+  width: 304px;
+  height: 50%;
+  background: #F3ECE4 0% 0% no-repeat padding-box;
+  border-radius: 23px;
+  justify-content: center;
+  align-items: center;
+  padding: -15px;
+  display: flex;
+  font: Bold 20px/24px Open Sans ExtraBold;
+  color: #FF860D;
+  text-transform: uppercase;
+}
+
+.dinning-map-logo {
+  width: 90% !important;
+  background-size: contain !important;
+  padding: 0px !important;
+}
+
+.map-logo {
+  width: 60px;
+  height: 100%;
+  // background: transparent url(../images/dinning/Image\ 8.png) 0% 0% no-repeat padding-box;
+  background-position: center;
+  padding: 15px;
+}
+
+.map-logo-div span {
+  width: 100px;
+}
+
+.map-desc {
+  position: relative;
+  margin: 25px 0px 0px 25px;
+  width: 390px;
+  height: 150px;
+  text-align: left;
+  font: 200 22px/28px Open Sans;
+  letter-spacing: 0px;
+  color: #252427;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.separator {
+  flex: 0%;
+  width: 0px;
+  height: 90%;
+  border: 1px solid #CCCCCC;
+}
+
+.map-div {
+  flex: 70%;
+  width: 863px;
+  height: 100%;
+}
+
+.venue-map {
+  height: 90%;
+  width: 90%;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  margin-left: 5%;
+  position: relative;
+  overflow: hidden;
+  /* display: flex; */
+}
+
+.addtocart {
+  position: absolute;
+  text-align: center;
+  left: 3.5%;
+  width: 21.5%;
+  height: 97px;
+  background: #dc3545 0% 0% no-repeat padding-box;
+  font: Bold 32.5px/97px Open Sans;
+  margin: 10px;
+}
+
+.row {
+  justify-content: center;
+  font-size: xxx-large;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+
+  .btn-quantity {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #dc3545;
+  }
+}

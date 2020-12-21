@@ -1,0 +1,73 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.json",
+          "/*.css",
+          "/*.js"
+        ],
+        "urls": [
+          "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css",
+          "https://fonts.googleapis.com/**",
+          "https://fonts.gstatic.com/s/materialicons/v50/**"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "backend-api",
+      "urls": [
+        "https://retailerqueueservices.azurewebsites.net/api/available-languages",
+        "https://retailerqueueservices.azurewebsites.net/api/consumer/stores",
+        "https://retailerqueueservices.azurewebsites.net/api/consumer/reservations",
+        "https://retailerqueueservices.azurewebsites.net/api/consumer/store_slots",
+        "https://retailerqueueservices.azurewebsites.net/api/store-manager/stores",
+        "https://retailerqueueservices.azurewebsites.net/api/store-manager/store/slots",
+        "https://retailerqueueservices.azurewebsites.net/api/store-manager/store/slot/reservations",
+        "https://retailerqueueservices.azurewebsites.net/api/retailer-manager/retailer-details",
+        "https://retailerqueueservices.azurewebsites.net/api/retailer-manager/managed-stores",
+        "https://retailerqueueservices.azurewebsites.net/api/retailer-manager/managed-store/users",
+        "https://retailerqueueservices.azurewebsites.net/api/retailer-manager/minutes-per-slot-list",
+        "https://retailerqueueservices.azurewebsites.net/api/retailer-manager/managed-store/opening-hours",
+        "https://retailerqueueservices.azurewebsites.net/api/retailer-manager/days-in-month"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 50,
+        "maxAge": "30d",
+        "timeout": "5s"
+      }
+    },
+    {
+      "name": "recaptcha",
+      "urls": [
+        "https://www.google.com/recaptcha/api2/reload?k=6LfpAeoUAAAAAIUODHrmLhK2BiQIqlUlzpapugG4"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 20,
+        "maxAge": "30d",
+        "timeout": "5s"
+      }
+    }
+  ]
+}

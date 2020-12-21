@@ -1,0 +1,78 @@
+<div class="subnmenu-container">
+    <h1 class= "pricebookHeading">PriceBook Site Details</h1>
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Site Number</div>
+        <div class="col col-2">Health Check</div>
+        <div class="col col-2">Generate File</div>
+        <div class="col col-3">Export File</div>
+      </li>
+      <li class="table-row">
+        <div class="col col-1" data-label="Site Number">{{Sites[0].siteName}}</div>
+        <div class="col col-2" data-label="HealthCheck">
+          <button type="button" class="btn btn-info" (click)='getStatus(Sites[0].Id)'>
+            {{Sites[0].status}} 
+           
+          </button>
+        </div>
+        <div class="col col-3" data-label="Generate File">
+          <button type="button" class="btn btn-info" (click)='generateXMLFile(Sites[0].siteName)'>
+            {{Sites[0].generateFile}} 
+             
+          </button>
+        </div>
+        
+        <div class="col col-4" data-label="Export File">
+          <button type="button" class="btn btn-info" (click)='exportFile(Sites[0].computerName,Sites[0].dirname)'>
+            {{Sites[0].exportFile}} 
+            
+          </button>
+        </div>
+      </li>
+      <li class="table-row">
+        <div class="col col-1" data-label="Site Number">{{Sites[1].siteName}}</div>
+        <div class="col col-2" data-label="HealthCheck">
+          <button type="button" class="btn btn-info" (click)='getStatus(Sites[1].Id)'>
+            {{Sites[1].status}} 
+           
+          </button>
+        </div>
+        <div class="col col-3" data-label="Generate File">
+          <button type="button" class="btn btn-info" (click)='generateXMLFile(Sites[1].siteName)'>
+            {{Sites[1].generateFile}}
+             
+          </button>
+        </div>
+        
+        <div class="col col-4" data-label="Export File">
+          <button type="button" class="btn btn-info" (click)='exportFile(Sites[1].computerName,Sites[1].dirname)'>
+            {{Sites[1].exportFile}} 
+            
+          </button>
+        </div>
+      </li>
+      <li class="table-row">
+        <div class="col col-1" data-label="Site Number">{{Sites[2].siteName}}</div>
+        <div class="col col-2" data-label="HealthCheck">
+          <button type="button" class="btn btn-info" (click)='getStatus(Sites[2].Id)'>
+            {{Sites[2].status}} 
+           
+          </button>
+        </div>
+        <div class="col col-3" data-label="Generate File">
+          <button type="button" class="btn btn-info" (click)='generateXMLFile(Sites[2].siteName)'>
+            {{Sites[2].generateFile}}
+             
+          </button>
+        </div>
+        
+        <div class="col col-4" data-label="Export File">
+          <button type="button" class="btn btn-info" (click)='exportFile(Sites[2].computerName,Sites[2].dirname)'>
+            {{Sites[2].exportFile}} 
+            
+          </button>
+        </div>
+      </li>
+
+    </ul>
+  </div>

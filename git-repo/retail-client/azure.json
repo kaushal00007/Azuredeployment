@@ -1,0 +1,17 @@
+{
+  "hosting": [
+    {
+      "app": {
+        "project": "retail-client",
+        "target": "build",
+        "configuration": "production",
+        "path": "dist/retail-client"
+      },
+      "azureHosting": {
+        "subscription": "b3f6a53a-094b-4987-815b-eaac2544fdf7",
+        "resourceGroupName": "retail-client-static-deploy",
+        "account": "retailclientstatic"
+      }
+    }
+  ]
+}

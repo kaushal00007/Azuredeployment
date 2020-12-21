@@ -1,0 +1,18 @@
+<div class="footer">
+  <div class="back-btn" (click)="doBackButtonClick()">
+    <div class="back-btn-icon"></div>
+  </div>
+  <div class="level-container level-text">
+    <div class="level-right terminal-selector"><span>Account</span></div>
+    <div class="level-middle terminal-selector" (click)="doCartSummaryClick()">
+      <span>{{ basket?.totalQuantity }}</span>
+    </div>
+
+    <div class="level-left terminal-selector" (click)="doLogoutClick()">
+      <span>Logout</span>
+    </div>
+  </div>
+  <div class="home-btn" (click)="doHomeButtonClick()">
+    <div class="home-btn-icon"></div>
+  </div>
+</div>

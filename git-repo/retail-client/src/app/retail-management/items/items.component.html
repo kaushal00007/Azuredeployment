@@ -1,0 +1,29 @@
+<app-sidebar></app-sidebar>
+<div class="container1">
+  <div class="subnmenu-container" style="opacity: 1;">
+    <div class="subnmenu-body">
+      <div class="submenu-header">
+        <div class="submenu-heading"><span>{{catName}}</span></div>
+        <div class="submenu-sub-heading"><span></span></div>
+        <div class="navigation">
+          <div class="left lDisable"></div>
+          <div class="right rEnable"></div>
+        </div>
+      </div>
+      <div class="submenu-list-coloum">
+        <div class="submenus-div" id="submenus-div" [style.width]="width" style="margin-left: 0px;">
+          <div *ngFor="let item of items" class="submenu-gridview SubMenu" id="{{item.id}}"
+            (click)=setSelectedItem(item)>
+            <div
+              [ngStyle]="{'background': 'transparent  url(&quot;../../../assets/images/icons/' + item.itemImg + '&quot;) 0% 0% no-repeat padding-box', 'background-size': 'cover'}">
+            </div>
+            <span>{{item.name}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-item-details *ngIf="openItemDetails" [itemDetails]="selectedItem" (close)="closeItemDetailsPopup()">
+  </app-item-details>
+</div>
+<app-footer></app-footer>
